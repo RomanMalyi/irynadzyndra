@@ -1,0 +1,16 @@
+<div class="flex-container">
+
+  <div class="slide-center">
+    <slideshow [height]="'45vw'"
+               [autoPlay]="true"
+               [showArrows]="false"
+               [imageUrls]="pageData.allImageUrlArray"
+               [lazyLoad]="pageData.allImageUrlArray?.length > 1"
+               [autoPlayWaitForLazyLoad]="true">
+    </slideshow>
+  </div>
+
+</div>
+
+
+

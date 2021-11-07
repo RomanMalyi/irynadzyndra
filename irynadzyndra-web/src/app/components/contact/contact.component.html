@@ -1,0 +1,18 @@
+<div class="flex-container">
+  <div class="flex-photo">
+    <img src="../../assets/iryna.jpg" alt="Iryna Dzyndra">
+  </div>
+  <div>
+    <form method="POST" action="https://formspree.io/hlinka@ukr.net">
+      <p>{{pageData.allData?.contactName}}</p>
+      <input class="input-name" type="input" name="First name" placeholder="{{pageData.allData?.placeholderFirstName}}" required>
+      <input class="input-name" type="input" name="Last name" placeholder="{{pageData.allData?.placeholderLastName}}" required>
+      <p>{{pageData.allData?.contactEmail}}</p>
+      <input class="input-email" type="email" name="email" placeholder="{{pageData.allData?.placeholderEmail}}" required>
+      <p>{{pageData.allData?.contactMessage}}</p>
+      <textarea name="message" placeholder="{{pageData.allData?.placeholderMessage}}" required></textarea>
+      <br>
+      <button class="button" type="submit">{{pageData.allData?.contactSend}}</button>
+    </form>
+  </div>
+</div>

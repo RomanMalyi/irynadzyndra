@@ -1,0 +1,22 @@
+.slide-center {
+width: 65vw;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media all and (max-width: 600px) {
+
+  .slide-center {
+    width: 80vw;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .slide-center {
+    width: 90vw;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,110 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.flex-photo {
+  width: 40%;
+  margin: 20px;
+  text-align: center;
+}
+img{
+  width: 100%;
+}
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #f9f9f9;
+}
+input:focus {
+  background-color: #ffffff;
+}
+textarea {
+  width: 85vmin;
+  height: 20vmin;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #f9f9f9;
+}
+textarea:focus {
+  background-color: #ffffff;
+}
+.input-name {
+  width: 40vmin;
+}
+.input-email {
+  width: 85vmin;
+}
+
+input:focus {
+  outline-width: 0;
+}
+button {
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+@media all and (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 5vw;
+    flex-wrap: wrap;
+  }
+
+  .flex-photo {
+    width: 90vw;
+    margin: 20px;
+    text-align: center;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 5vw;
+    flex-wrap: wrap;
+  }
+
+  .flex-photo {
+    width: 90vw;
+    margin: 20px;
+    text-align: center;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+

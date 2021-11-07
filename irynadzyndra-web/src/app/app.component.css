@@ -1,0 +1,26 @@
+.flex-block {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media all and (max-width: 400px) {
+  .flex-block {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+}
+a:hover {
+  cursor: pointer;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1em auto;
+  padding: 0;
+  width: 90%;
+}

@@ -1,0 +1,158 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  margin: -28px;
+}
+
+.flex-container > div {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 6px;
+}
+
+.irydij {
+  margin-top: 28px;
+  width: 50px;
+  height: 35px;
+  background: url('main-ir.jpg') no-repeat 0 0;
+  background-size: 50px 35px;
+}
+
+.container {
+  display: flex;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (max-width: 600px) {
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container > li {
+    flex-basis: 50%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .container > li {
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: inline-block;
+  color: #666;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  color: #666;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  cursor: pointer;
+  outline: none 0;
+}
+
+li a:hover:not(.active), .dropdown:hover .dropbtn {
+  border-bottom: 2px solid #e7e7e7;
+}
+
+li a.active {
+  border-bottom: 2px solid #000000;
+  color: #000000;
+}
+
+.main {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 12px 50px;
+  font-size: larger;
+  font-style: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+}
+
+.name {
+  text-align: center;
+  font-size: large;
+  letter-spacing: 6px;
+}
+
+/*p::before {
+  position: absolute;
+  display:inline-block;
+  height:150px;
+  width:150px;
+  margin-right: 5px;
+  content: "";
+  background:url("ir.jpg") no-repeat 0 0;
+  background-size: 150px 150px;
+}*/
+
+/*.irydij {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 150px;
+  background: url('main-ir.jpg') no-repeat 0 0;
+  background-size: 200px 150px;
+}*/
+
+

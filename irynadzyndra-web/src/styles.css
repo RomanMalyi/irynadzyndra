@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&amp;subset=cyrillic" rel="stylesheet');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  outline: none 0;
+  font-family: "Exo 2", sans-serif;
+}
