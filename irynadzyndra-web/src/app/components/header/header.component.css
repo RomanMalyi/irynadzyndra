@@ -1,21 +1,23 @@
 .flex-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: -28px;
 }
 
 .flex-container > div {
   text-align: center;
-  font-size: 28px;
-  letter-spacing: 6px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
-.irydij {
-  margin-top: 28px;
-  width: 50px;
-  height: 35px;
-  background: url('main-ir.jpg') no-repeat 0 0;
-  background-size: 50px 35px;
+.irydiy {
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.irydiy > p {
+  font-size: 45px;
 }
 
 .container {
@@ -28,6 +30,15 @@
 }
 
 @media all and (max-width: 600px) {
+
+  .flex-container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .irydiy > p {
+    margin: 0;
+  }
 
   .container {
     flex-wrap: wrap;
@@ -123,36 +134,16 @@ li a.active {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content{
   display: block;
   cursor: pointer;
 }
+
 
 .name {
   text-align: center;
   font-size: large;
   letter-spacing: 6px;
 }
-
-/*p::before {
-  position: absolute;
-  display:inline-block;
-  height:150px;
-  width:150px;
-  margin-right: 5px;
-  content: "";
-  background:url("ir.jpg") no-repeat 0 0;
-  background-size: 150px 150px;
-}*/
-
-/*.irydij {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 150px;
-  background: url('main-ir.jpg') no-repeat 0 0;
-  background-size: 200px 150px;
-}*/
 
 
