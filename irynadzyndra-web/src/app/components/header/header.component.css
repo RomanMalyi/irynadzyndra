@@ -134,11 +134,10 @@ li a.active {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content{
+.showDropdown {
   display: block;
   cursor: pointer;
 }
-
 
 .name {
   text-align: center;
