@@ -23,7 +23,7 @@
 }
 img {
   height: 100%;
-  max-width: 28vw;
+  max-width: 100%;
 }
 .dropdown {
   position: relative;
@@ -45,6 +45,7 @@ img {
 .desc {
   font-size: smaller;
 }
+
 @media all and (max-width: 600px) {
   .flex-container > .photo {
     /*background-color: #4bf12b;**/
