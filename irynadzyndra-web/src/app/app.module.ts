@@ -17,6 +17,7 @@ import {HorizonComponent} from './components/horizon/horizon.component';
 import {TerravitaComponent} from './components/terravita/terravita.component';
 import {PageDataService} from './services/page-data.service';
 import { SeineComponent } from './components/seine/seine.component';
+import { LinesComponent } from './components/lines/lines.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SeineComponent } from './components/seine/seine.component';
     FooterComponent,
     HorizonComponent,
     TerravitaComponent,
-    SeineComponent
+    SeineComponent,
+    LinesComponent
   ],
   imports: [
     BrowserModule,

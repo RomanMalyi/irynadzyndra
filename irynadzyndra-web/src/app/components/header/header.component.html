@@ -1,10 +1,9 @@
-
 <div class="flex-container">
   <div>
     <p><b>IRYNA DZYNDRA</b></p>
   </div>
-<div class="irydiy">
-  <p>IRYDIY</p>
+  <div class="irydiy">
+    <p>IRYDIY</p>
   </div>
   <div>
     <p><b>ART GALLERY</b></p>
@@ -16,6 +15,7 @@
     <li class="dropdown" (click)="dropdownEvent()">
       <a routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{pageData.allData?.gallery}}
         <div class="dropdown-content" [ngClass]="showDropdown ? 'showDropdown' : ''">
+          <a routerLinkActive="active" routerLink="gallery/lines">{{pageData.allData?.lines}}</a>
           <a routerLinkActive="active" routerLink="gallery/terravita">{{pageData.allData?.terravita}}</a>
           <a routerLinkActive="active" routerLink="gallery/horizon">{{pageData.allData?.horizon}}</a>
           <a routerLinkActive="active" routerLink="gallery/seine">{{pageData.allData?.seine}}</a>
@@ -23,7 +23,7 @@
       </a>
     </li>
     <li><a routerLinkActive="active" (click)="hideDropdown()" routerLink="about">{{pageData.allData?.cv}}</a></li>
-    <li><a routerLinkActive="active" (click)="hideDropdown()" routerLink="contact">{{pageData.allData?.contact}}</a></li>
+    <li><a routerLinkActive="active" (click)="hideDropdown()" routerLink="contact">{{pageData.allData?.contact}}</a>
+    </li>
   </ul>
 </div>
-

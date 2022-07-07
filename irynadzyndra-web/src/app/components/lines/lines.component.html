@@ -1,0 +1,21 @@
+<div class="flex-container-text">
+  <div class="galleryName">
+    <h2>{{pageData.allData?.linesName}}</h2>
+  </div>
+  <div>
+    <p>
+      {{pageData.allData?.linesText}}
+    </p>
+  </div>
+</div>
+<div class="flex-container">
+  <div *ngFor="let photo of pageData.linesImageUrlArray; let i = index" class="photo dropdown">
+    <img (click)="openGallery(i)" src="{{photo}}" alt="Iryna Dzyndra">
+    <div class="dropdown-content">
+      <p class="desc">{{pageData.allData.imagesLinesNotes[i]}}</p>
+    </div>
+  </div>
+</div>
+<ngx-image-gallery [images]="images" [conf]="conf" (onOpen)="galleryOpened($event)" (onClose)="galleryClosed()"
+  (onImageClicked)="galleryImageClicked($event)" (onImageChange)="galleryImageChanged($event)"
+  (onDelete)="deleteImage($event)"></ngx-image-gallery>

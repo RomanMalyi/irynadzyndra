@@ -1,6 +1,7 @@
 export class PageData {
   hom: string;
   gallery: string;
+  lines: string;
   horizon: string;
   terravita: string;
   cv: string;
@@ -35,10 +36,14 @@ export class PageData {
   Joint14: string;
   Joint15: string;
   Joint16: string;
+  Joint17: string;
+  Joint18: string;
 
+  linesText: string;
   terravitaText: string;
   horizonText: string;
   horizonName: string;
+  linesName: string;
   terravitaName: string;
   seineText: string;
   seineName: string;
@@ -52,6 +57,7 @@ export class PageData {
   placeholderEmail: string;
   placeholderMessage: string;
 
+  imagesLinesNotes: string[];
   imagesHorizonNotes: string[];
   imagesTerravitaNotes: string[];
   imagesSeineNotes: string[];
