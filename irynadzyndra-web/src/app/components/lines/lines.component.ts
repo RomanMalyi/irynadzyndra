@@ -25,7 +25,7 @@ export class LinesComponent implements OnInit {
 
   constructor(public pageData: PageDataService) {
     this.images = [];
-    debugger;
+
     for (let i = 0; i < this.pageData.linesCount; ++i) {
       this.images.push({
         url: this.pageData.linesImageUrlArray[i],

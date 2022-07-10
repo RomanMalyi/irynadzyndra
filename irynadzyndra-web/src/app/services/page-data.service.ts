@@ -29,6 +29,13 @@ export class PageDataService {
 
     this.language = "en";
     this.reloadData();
+
+    for (let i = 1; i <= this.linesCount; ++i) {
+      const image = "../../assets/lines/lines" + i + ".jpg";
+      this.linesImageUrlArray.push(image);
+      this.allImageUrlArray.push(image);
+    }
+
     for (let i = 1; i <= this.terravitaCount; ++i) {
       const image = "../../assets/terravita/terravita" + i + ".jpg";
       this.terravitaImageUrlArray.push(image);
@@ -45,12 +52,6 @@ export class PageDataService {
     for (let i = 2; i <= this.seineCount; ++i) {
       const image = "../../assets/seine/seine" + i + ".jpg";
       this.seineImageUrlArray.push(image);
-      this.allImageUrlArray.push(image);
-    }
-
-    for (let i = 2; i <= this.linesCount; ++i) {
-      const image = "../../assets/lines/lines" + i + ".jpg";
-      this.linesImageUrlArray.push(image);
       this.allImageUrlArray.push(image);
     }
   }

@@ -42,8 +42,8 @@ export class PageData {
   linesText: string;
   terravitaText: string;
   horizonText: string;
-  horizonName: string;
   linesName: string;
+  horizonName: string;
   terravitaName: string;
   seineText: string;
   seineName: string;
