@@ -38,6 +38,7 @@ export class PageData {
   Joint16: string;
   Joint17: string;
   Joint18: string;
+  Joint19: string;
 
   linesText: string;
   terravitaText: string;
